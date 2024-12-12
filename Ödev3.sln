@@ -5,12 +5,34 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08679A3F-A89F-4707-B65C-E2EAD26378E5}"
 	ProjectSection(SolutionItems) = preProject
-		HTMLPage1.html = HTMLPage1.html
+		advertisements.html = advertisements.html
+		changepassword.html = changepassword.html
+		login.html = login.html
+		index.html = index.html
+		myfavorites.html = myfavorites.html
+		personalınformations.html = personalınformations.html
+		signup.html = signup.html
+		Unregistered.html = Unregistered.html
+		stylesheet.css = stylesheet.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "htmlandcss", "htmlandcss", "{5BE11F30-111B-4EA3-B7C6-97A76A1E6920}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jscripts files", "Jscripts files", "{8BBBAB41-8DE0-43F7-97C4-A2E3FCCFF34F}"
+	ProjectSection(SolutionItems) = preProject
+		advertisement.js = advertisement.js
+		index.js = index.js
+		login.js = login.js
+		signup.js = signup.js
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BE11F30-111B-4EA3-B7C6-97A76A1E6920} = {08679A3F-A89F-4707-B65C-E2EAD26378E5}
+		{8BBBAB41-8DE0-43F7-97C4-A2E3FCCFF34F} = {5BE11F30-111B-4EA3-B7C6-97A76A1E6920}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07A35FD6-51A9-4B8B-BC56-97822B701F2D}

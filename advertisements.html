@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisements</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Evim Şahane</h1>
+    </header>
+    <div class="content">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="change-password.html">Change the Password</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="advertisements.html" class="active">My Advertisements</a></li>
+                <li><a href="personal-informations.html">Personal Informations</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h2>My Advertisements</h2>
+            <!-- Advertisement List -->
+            <section id="ad-list">
+                <h3>Your Advertisements</h3>
+                <ul class="ad-list">
+                    <li>
+                        <strong>Title:</strong> Cozy 2-Bedroom Apartment <br>
+                        <strong>Description:</strong> Located in the heart of the city. <br>
+                        <button class="delete-ad-btn">Delete</button>
+                    </li>
+                    <li>
+                        <strong>Title:</strong> Spacious Villa for Rent <br>
+                        <strong>Description:</strong> Fully furnished and close to amenities. <br>
+                        <button class="delete-ad-btn">Delete</button>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Post New Advertisement -->
+            <section id="post-ad">
+                <h3>Post a New Advertisement</h3>
+                <form id="postAdForm">
+                    <div class="form-group">
+                        <label for="adTitle">Title:</label>
+                        <input type="text" id="adTitle" name="adTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adDescription">Description:</label>
+                        <textarea id="adDescription" name="adDescription" required></textarea>
+                    </div>
+                    <button type="submit">Post Advertisement</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="advertisements.js"></script>
+</body>
+</html>

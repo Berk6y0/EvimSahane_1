@@ -1,0 +1,174 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Header ve Footer alanını çıkar */
+    background: #f4f4f4;
+}
+
+.login-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+    .login-form h2 {
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+    button:hover {
+        background: #0056b3;
+    }
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+    p a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+/* Sign-Up Form */
+.signup-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Profile Page */
+.profile {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+/* Advertisement Page Specific Styles */
+#ad-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#ad-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.delete-ad-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .delete-ad-btn:hover {
+        background-color: #c9302c;
+    }
+
+#post-ad {
+    margin-top: 30px;
+}
+
+#postAdForm .form-group {
+    margin-bottom: 15px;
+}
+
+#postAdForm label {
+    display: block;
+    font-weight: bold;
+}
+
+#postAdForm input,
+#postAdForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#postAdForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    #postAdForm button:hover {
+        background-color: #0056b3;
+    }
+
