@@ -11,8 +11,12 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     }
     else {
 
-        //Log sayfasýna gitsin
+        localStorage.setItem("isLoggedIn", "true");
+        
+        alert("Login successful!");
 
+        // Baþka bir sayfaya yönlendir
+        window.location.href = "index.html";
     }
 
 });

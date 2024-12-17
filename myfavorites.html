@@ -4,30 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorites</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="AllProfiles.css">
 </head>
 <body>
     <header>
-        <h1>Evim Şahane</h1>
+        <h1><a href="index.html">Evim Şahane</a></h1>
     </header>
     <div class="content">
         <nav class="sidebar">
             <ul>
-                <li><a href="change-password.html">Change the Password</a></li>
-                <li><a href="favorites.html" class="active">My Favorites</a></li>
-                <li><a href="my-advertisement.html">My Advertisement</a></li>
-                <li><a href="personal-informations.html">Personal Informations</a></li>
-                <li><a href="post-advertisement.html">Post an Advertisement</a></li>
+                <li><a href="changepassword.html">Change the Password</a></li>
+                <li><a href="myfavorites.html" class="active">My Favorites</a></li>
+                <li><a href="advertisements.html">My Advertisement</a></li>
+                <li><a href="personalinformations.html">Personal Informations</a></li>
             </ul>
         </nav>
         <main class="main-content">
             <h2>My Favorites</h2>
             <ul class="favorites-list">
-                <li>Favorite Item 1</li>
-                <li>Favorite Item 2</li>
-                <li>Favorite Item 3</li>
+                <li>
+                    <a href="house-details.html">
+                        <img src="https://via.placeholder.com/150" alt="Favorite 1">
+                        Favorite Item 1
+                    </a>
+                    <span class="heart-icon">&#x2764;</span>
+                </li>
+                <li>
+                    <a href="house-details.html">
+                        <img src="https://via.placeholder.com/150" alt="Favorite 2">
+                        Favorite Item 2
+                    </a>
+                    <span class="heart-icon">&#x2764;</span>
+                </li>
+                <li>
+                    <a href="house-details.html">
+                        <img src="https://via.placeholder.com/150" alt="Favorite 3">
+                        Favorite Item 3
+                    </a>
+                    <span class="heart-icon">&#x2764;</span>
+                </li>
             </ul>
         </main>
     </div>
+    <script> document.addEventListener("DOMContentLoaded", () => {
+            // Kalp ikonlarını seç
+            const heartIcons = document.querySelectorAll('.heart-icon');
+
+            heartIcons.forEach(icon => {
+                icon.addEventListener('click', function () {
+                    // Kalp ikonuna "removed" sınıfını ekle veya kaldır
+                    this.classList.toggle('removed');
+
+                    // Öğeyi favorilerden kaldırma
+                    if (this.classList.contains('removed')) {
+                        // Kalp siyah olduysa öğeyi listeden kaldır
+                        const listItem = this.parentElement;
+                        listItem.remove();
+
+                        // Kullanıcıya bilgilendirme
+                        alert("Item removed from favorites.");
+                    }
+                });
+            });
+        });   </script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Informations</title>
+    <link rel="stylesheet" href="AllProfiles.css">
+   
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Evim Şahane</a></h1>
+    </header>
+    <div class="content">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="changepassword.html">Change the Password</a></li>
+                <li><a href="myfavorites.html">My Favorites</a></li>
+                <li><a href="advertisements.html">My Advertisement</a></li>
+                <li><a href="personalinformations.html" class="active">Personal Informations</a></li>
+
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h2>Personal Information</h2>
+            <form id="personalInfoForm">
+                <div class="form-group">
+                    <label for="name"><strong>Name:</strong></label>
+                    <input type="text" id="name" value="Ata">
+                </div>
+                <div class="form-group">
+                    <label for="surname"><strong>Surname:</strong></label>
+                    <input type="text" id="surname" value="Kılıç">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate"><strong>Birth Date:</strong></label>
+                    <input type="date" id="birthdate" value="2001-12-26">
+                </div>
+                <div class="form-group">
+                    <label for="tel"><strong>Tel No:</strong></label>
+                    <input type="tel" id="tel" value="05426843987">
+                </div>
+                <div class="form-group">
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email" id="email" value="ataklc1042@gmail.com">
+                </div>
+                <button id="submitchanges" type="submit">Save Changes</button>
+            </form>
+        </main>
+
+    </div>
+    <script >
+        document.addEventListener("DOMContentLoaded", () => {
+            // Formu ve inputları seç
+            const personalInfoForm = document.getElementById("personalInfoForm");
+
+            if (personalInfoForm) { // Formun var olup olmadığını kontrol et
+                // Form submit olayını dinle
+                personalInfoForm.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Sayfa yenilenmesini engelle
+
+                    // Input değerlerini al
+                    const name = document.getElementById("name").value;
+                    const surname = document.getElementById("surname").value;
+                    const birthdate = document.getElementById("birthdate").value;
+                    const tel = document.getElementById("tel").value;
+                    const email = document.getElementById("email").value;
+
+                    // Yeni bilgileri console'a yazdır (test amaçlı)
+                    console.log("Updated Information:");
+                    console.log("Name:", name);
+                    console.log("Surname:", surname);
+                    console.log("Birth Date:", birthdate);
+                    console.log("Tel No:", tel);
+                    console.log("Email:", email);
+
+                    // Başarı mesajı göster
+                    alert("Changes successfully saved!");
+                });
+            } else {
+                console.error("Form with ID 'personalInfoForm' not found.");
+            }
+        });
+
+
+
+
+    </script>
+</body>
+</html>

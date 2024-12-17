@@ -1,0 +1,100 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+    .header-container h1 {
+        margin: 0;
+    }
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.auth-buttons button {
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+/* House Details Section */
+.house-details {
+    padding: 20px;
+}
+
+    .house-details h2 {
+        margin-bottom: 10px;
+    }
+
+.images {
+    display: flex;
+    gap: 10px;
+}
+
+.main-image img {
+    width: 400px;
+    height: auto;
+}
+
+.side-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Description */
+.description {
+    margin: 20px 0;
+}
+
+/* Bedroom Images */
+.bedroom-images img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* Map Section */
+.map img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Seller Info Section */
+.seller-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.seller-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .seller-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .seller-card p {
+        margin: 5px 0;
+    }

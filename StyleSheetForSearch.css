@@ -1,0 +1,170 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    header h1 {
+        font-size: 24px;
+    }
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+    .search-bar input {
+        border: none;
+        padding: 8px 12px;
+        width: 250px;
+        outline: none;
+    }
+
+    .search-bar button {
+        border: none;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+.auth-buttons button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .auth-buttons button:hover {
+        background-color: #45a049;
+    }
+
+/* Filters Section */
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 15px 20px;
+}
+
+.filter-btn {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .filter-btn:hover {
+        background-color: #ccc;
+    }
+
+/* Search Results Container */
+.results-container {
+    display: flex;
+    margin: 20px;
+}
+
+.listings {
+    width: 65%;
+    margin-right: 20px;
+}
+
+.result-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+    .result-card img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+.result-details {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+    .result-details h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .result-details p {
+        color: #777;
+        font-size: 14px;
+    }
+
+    .result-details .price {
+        color: #4caf50;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+/* Map Section */
+.map {
+    width: 35%;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #666;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+    .pagination button {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        .pagination button.active {
+            background-color: #4caf50;
+            color: #fff;
+            border-color: #4caf50;
+        }
+
+        .pagination button:hover:not(.active) {
+            background-color: #ddd;
+        }

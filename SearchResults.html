@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Evim Şahane</title>
+    <link rel="stylesheet" href="StyleSheetForSearch.css">
+    <script src="stylesheet.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1><a href="index.html">Evim Şahane</a></h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search, e.g., 1+1 Turkey...">
+                <button>Search</button>
+            </div>
+            <div class="auth-buttons">
+                <button onclick="window.location.href='login.html'">Login</button>
+                <button onclick="window.location.href='signup.html'">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <span>300+ listings near you</span>
+        <div class="filters">
+            <button>Price</button>
+            <button>Type of Estate</button>
+            <button>Turkey</button>
+            <button>More</button>
+            <button class="filter-btn">Filter</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="results-container">
+            <!-- Left: Listings -->
+            <div class="listings">
+                <div class="listing-card">
+                    <img src="placeholder.png" alt="Listing 1">
+                    <div class="details">
+                        <h3>Beylikdüzü EV</h3>
+                        <p>Apartment/House</p>
+                        <p><small>300 sq/m | 3+1 | Marmara</small></p>
+                        <p class="price">$1500</p>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="placeholder.png" alt="Listing 2">
+                    <div class="details">
+                        <h3>Corn Field</h3>
+                        <p>There is no sale to people from Rise and Trabzon</p>
+                        <p><small>Trabzon Of | 50 acres</small></p>
+                        <p class="price">$5000</p>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="placeholder.png" alt="Listing 3">
+                    <div class="details">
+                        <h3>Apartment/House</h3>
+                        <p>No house sales to students</p>
+                        <p><small>Uskudar, Istanbul | 250 sq/m</small></p>
+                        <p class="price">$3000</p>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="placeholder.png" alt="Listing 4">
+                    <div class="details">
+                        <h3>Wheat Field</h3>
+                        <p>Cheap Price, Do Not Bargain</p>
+                        <p><small>Kutahya | 40 acres</small></p>
+                        <p class="price">$2000</p>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="placeholder.png" alt="Listing 5">
+                    <div class="details">
+                        <h3>Bungalow</h3>
+                        <p>With Jacuzzi</p>
+                        <p><small>Sakarya | 500 sq/m</small></p>
+                        <p class="price">$18000</p>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="pagination">
+                    <span>&lt;&lt;</span>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>6</span>
+                    <span>&gt;&gt;</span>
+                </div>
+            </div>
+
+            <!-- Right: Map -->
+            <div class="map-section">
+                <h3>Search on map</h3>
+                <div class="map-placeholder">
+                    <!-- This will be replaced with an actual map in future -->
+                    <img src="map-placeholder.png" alt="Map Placeholder">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Evim Şahane. All rights reserved.</p>
+    </footer>
+</body>
+</html>

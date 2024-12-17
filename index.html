@@ -1,35 +1,91 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evim Şahane</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="scripts.js"></script>
+ <link rel="stylesheet" href="stylesheet.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Evim Şahane</h1>
-        <nav>
-            <a href="login.html">Login</a>
-            <a href="signup.html">Sign Up</a>
-            <a href="profile.html">My Profile</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Property Listings</h2>
-        <div id="listings">
-            <div class="listing">
-                <h3>Beylikdüzü House</h3>
-                <p>Price: $150,000</p>
-                <a href="details.html">View Details</a>
+        <div class="header-container">
+            <h1><a href="index.html">Evim Şahane</a></h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search, e.g., Şile 1+1...">
+                <button>🔍</button>
+            </div>
+            <div class="auth-buttons">
+                <button onclick="window.location.href='login.html'">Login</button>
+                <button onclick="window.location.href='signup.html'">Sign Up</button>
+              
+            </div>
+            <div id="log-button">
+                <button onclick="logout()">Log Out</button>
             </div>
         </div>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to Evim Şahane</h2>
+            <p>If the real estate you are looking for is not in Evim Şahane, it is probably not the house you are looking for.</p>
+        </section>
+        <section class="highlights">
+            <h2>Highlights</h2>
+            <div class="listings">
+                <!-- Example Property Cards -->
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Manisa Olive Field">
+                    <h3>Manisa Olive Field</h3>
+                    <p>Attributes</p>
+                    <p>$25,000</p>
+                </div>
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Izmir Konak Villa">
+                    <h3>Izmir Konak Villa</h3>
+                    <p>Attributes</p>
+                    <p>$99,000</p>
+                </div>
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Aydın Didim Summerhouse">
+                    <h3>Aydın Didim Summerhouse</h3>
+                    <p>Attributes</p>
+                    <p>$46,000</p>
+                </div>
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Beylikduzu House">
+                    <h3>Beylikduzu House</h3>
+                    <p>Attributes</p>
+                    <p>$1,500</p>
+                </div>
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Şanlıurfa Siverek Land">
+                    <h3>Şanlıurfa Siverek Land</h3>
+                    <p>Attributes</p>
+                    <p>$20,000</p>
+                </div>
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Hatay İskenderun House">
+                    <h3>Hatay İskenderun House</h3>
+                    <p>Attributes</p>
+                    <p>$56,000</p>
+                </div>
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Kütahya Apartment">
+                    <h3>Kütahya Apartment</h3>
+                    <p>Attributes</p>
+                    <p>$34,000</p>
+                </div>
+                <div class="property-card">
+                    <img src="placeholder.png" alt="Trabzon Of Tea Land">
+                    <h3>Trabzon Of Tea Land</h3>
+                    <p>Attributes</p>
+                    <p>$78,000</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Evim Şahane</p>
-    </footer>
 </body>
-
 </html>
 
